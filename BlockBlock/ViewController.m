@@ -40,6 +40,9 @@
 {
     NSLog(@"block传值");
     BlockPassByValueVC * blockVC = [[BlockPassByValueVC alloc] init];
+    blockVC.passValueBlock = ^(NSString *valueStr) {
+        NSLog(@"valueStr = %@",valueStr);
+    };
     [self presentViewController:blockVC animated:YES completion:nil];
 }
 

@@ -10,4 +10,6 @@
 
 @interface BlockPassByValueVC : UIViewController
 
+@property (nonatomic, strong) void(^passValueBlock)(NSString * valueStr);
+
 @end
