@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D52FDFF1EC409EB004375AC /* MyTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D52FDFE1EC409EB004375AC /* MyTool.m */; };
+		0D52FE021EC434D6004375AC /* NSObject+Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D52FE011EC434D6004375AC /* NSObject+Tool.m */; };
+		0D52FE061EC442DE004375AC /* BlockCommonVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D52FE051EC442DE004375AC /* BlockCommonVC.m */; };
+		0D52FE091EC4430F004375AC /* BlockPassByValueVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D52FE081EC4430F004375AC /* BlockPassByValueVC.m */; };
+		0D52FE0C1EC4433F004375AC /* BlockExtendedUseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D52FE0B1EC4433F004375AC /* BlockExtendedUseVC.m */; };
 		0D75487C1EBA10C60093E920 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D75487B1EBA10C60093E920 /* main.m */; };
 		0D75487F1EBA10C60093E920 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D75487E1EBA10C60093E920 /* AppDelegate.m */; };
 		0D7548821EBA10C60093E920 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7548811EBA10C60093E920 /* ViewController.m */; };
@@ -35,6 +40,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D52FDFD1EC409EB004375AC /* MyTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTool.h; sourceTree = "<group>"; };
+		0D52FDFE1EC409EB004375AC /* MyTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTool.m; sourceTree = "<group>"; };
+		0D52FE001EC434D6004375AC /* NSObject+Tool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Tool.h"; sourceTree = "<group>"; };
+		0D52FE011EC434D6004375AC /* NSObject+Tool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Tool.m"; sourceTree = "<group>"; };
+		0D52FE041EC442DE004375AC /* BlockCommonVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockCommonVC.h; sourceTree = "<group>"; };
+		0D52FE051EC442DE004375AC /* BlockCommonVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockCommonVC.m; sourceTree = "<group>"; };
+		0D52FE071EC4430F004375AC /* BlockPassByValueVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockPassByValueVC.h; sourceTree = "<group>"; };
+		0D52FE081EC4430F004375AC /* BlockPassByValueVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockPassByValueVC.m; sourceTree = "<group>"; };
+		0D52FE0A1EC4433F004375AC /* BlockExtendedUseVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockExtendedUseVC.h; sourceTree = "<group>"; };
+		0D52FE0B1EC4433F004375AC /* BlockExtendedUseVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockExtendedUseVC.m; sourceTree = "<group>"; };
 		0D7548771EBA10C60093E920 /* BlockBlock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlockBlock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D75487B1EBA10C60093E920 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0D75487D1EBA10C60093E920 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -78,6 +93,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D52FE031EC44288004375AC /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				0D52FDFD1EC409EB004375AC /* MyTool.h */,
+				0D52FDFE1EC409EB004375AC /* MyTool.m */,
+				0D52FE001EC434D6004375AC /* NSObject+Tool.h */,
+				0D52FE011EC434D6004375AC /* NSObject+Tool.m */,
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
 		0D75486E1EBA10C60093E920 = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +131,13 @@
 				0D75487E1EBA10C60093E920 /* AppDelegate.m */,
 				0D7548801EBA10C60093E920 /* ViewController.h */,
 				0D7548811EBA10C60093E920 /* ViewController.m */,
+				0D52FE041EC442DE004375AC /* BlockCommonVC.h */,
+				0D52FE051EC442DE004375AC /* BlockCommonVC.m */,
+				0D52FE071EC4430F004375AC /* BlockPassByValueVC.h */,
+				0D52FE081EC4430F004375AC /* BlockPassByValueVC.m */,
+				0D52FE0A1EC4433F004375AC /* BlockExtendedUseVC.h */,
+				0D52FE0B1EC4433F004375AC /* BlockExtendedUseVC.m */,
+				0D52FE031EC44288004375AC /* Other */,
 				0D7548831EBA10C60093E920 /* Main.storyboard */,
 				0D7548861EBA10C60093E920 /* Assets.xcassets */,
 				0D7548881EBA10C60093E920 /* LaunchScreen.storyboard */,
@@ -274,8 +307,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D7548821EBA10C60093E920 /* ViewController.m in Sources */,
+				0D52FE0C1EC4433F004375AC /* BlockExtendedUseVC.m in Sources */,
 				0D75487F1EBA10C60093E920 /* AppDelegate.m in Sources */,
+				0D52FE091EC4430F004375AC /* BlockPassByValueVC.m in Sources */,
 				0D75487C1EBA10C60093E920 /* main.m in Sources */,
+				0D52FE061EC442DE004375AC /* BlockCommonVC.m in Sources */,
+				0D52FDFF1EC409EB004375AC /* MyTool.m in Sources */,
+				0D52FE021EC434D6004375AC /* NSObject+Tool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,9 +463,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BlockBlock/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = wxk.BlockBlock;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -436,9 +476,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BlockBlock/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = wxk.BlockBlock;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -507,6 +549,7 @@
 				0D7548A61EBA10C60093E920 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0D7548A71EBA10C60093E920 /* Build configuration list for PBXNativeTarget "BlockBlockTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +558,7 @@
 				0D7548A91EBA10C60093E920 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0D7548AA1EBA10C60093E920 /* Build configuration list for PBXNativeTarget "BlockBlockUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +567,7 @@
 				0D7548AC1EBA10C60093E920 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
