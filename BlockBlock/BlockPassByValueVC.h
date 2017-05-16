@@ -8,8 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+typedef void(^wxkBlock) (NSString * value);
+
 @interface BlockPassByValueVC : UIViewController
 
 @property (nonatomic, strong) void(^passValueBlock)(NSString * valueStr);
+
+@property (nonatomic, strong) wxkBlock wBlcok;
 
 @end

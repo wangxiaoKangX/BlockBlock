@@ -37,14 +37,15 @@
     int(^myBlock_3)(int) = ^(int d){
         return d * d;
     };
-    int e = myBlock_3(6);
-    NSLog(@" d * d = %d",e);
+    int result = myBlock_3(6);
+    NSLog(@" d * d = %d",result);
     
     // 带有返回值与参数 参数为NSString
     NSString *(^myBlock_4)(NSString *) = ^(NSString * strA){
         return [NSString stringWithFormat:@"返回值字符串的Block-%@",strA];
     };
     NSLog(@"B4-%@",myBlock_4(@"BBBLOCK_4"));
+    
 }
 
 - (void) viewDidAppear:(BOOL)animated
@@ -52,7 +53,7 @@
     [super viewDidAppear:animated];
     UIButton * backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     backBtn.frame = CGRectMake(20, 30, 80, 50);
-    [backBtn setTitle:@"BACK" forState:UIControlStateNormal];
+    [backBtn setTitle:@"返回" forState:UIControlStateNormal];
     [backBtn setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
     backBtn.titleLabel.font = [UIFont systemFontOfSize:22];
     [backBtn addTarget:self action:@selector(back) forControlEvents:UIControlEventTouchUpInside];

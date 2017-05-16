@@ -24,7 +24,7 @@
     [super viewDidAppear:animated];
     UIButton * backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     backBtn.frame = CGRectMake(20, 30, 80, 50);
-    [backBtn setTitle:@"BACK" forState:UIControlStateNormal];
+    [backBtn setTitle:@"返回" forState:UIControlStateNormal];
     [backBtn setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
     backBtn.titleLabel.font = [UIFont systemFontOfSize:22];
     [backBtn addTarget:self action:@selector(back) forControlEvents:UIControlEventTouchUpInside];
@@ -38,9 +38,9 @@
 
 - (void) touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
-    if (self.passValueBlock)
+    if (self.passValueBlock) // 如果在上一个页面调用了这个block，就执行下面的方法
     {
-        self.passValueBlock(@"传递一个ABC过去");
+        self.passValueBlock(@"10086"); //把这里的值当参数传递过去
     }
     [self back];
 }

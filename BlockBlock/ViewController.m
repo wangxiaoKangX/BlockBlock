@@ -38,12 +38,17 @@
 // block传值
 - (IBAction)exchangeValue:(id)sender
 {
-    NSLog(@"block传值");
-    BlockPassByValueVC * blockVC = [[BlockPassByValueVC alloc] init];
-    blockVC.passValueBlock = ^(NSString *valueStr) {
-        NSLog(@"valueStr = %@",valueStr);
+    BlockPassByValueVC * BlockPVc = [[BlockPassByValueVC alloc] init];
+    
+    /**
+     passValueBlock 是 BlockPVc 这样控制器里的 block
+     valueStr 为 BlockPVc 控制器要传递过来的参数
+     {}括号里的代码是在BlockPVc的.m文件里传了参数运行block的时候才会调用
+     */
+    BlockPVc.passValueBlock = ^(NSString *valueStr) {
+        NSLog(@"传过来的值 = %@",valueStr);
     };
-    [self presentViewController:blockVC animated:YES completion:nil];
+    [self presentViewController:BlockPVc animated:YES completion:nil];
 }
 
 // block做参数与做返回值

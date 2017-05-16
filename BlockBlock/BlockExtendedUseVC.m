@@ -20,13 +20,14 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     
-    // 链式变成  block做参数 做返回值
+    // 链式变成  block做参数 做返回值！！
     NSInteger  values = [NSObject wxk_makeTool:^(MyTool * tool) {
         tool.add(10).add(20).add(30);
     }];
     
     NSLog(@"values = %ld",(long)values);
     
+/**************************************************************/
     
     // block作为参数的方法调用
     [self block_t_5:^{
@@ -56,7 +57,7 @@
     [super viewDidAppear:animated];
     UIButton * backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     backBtn.frame = CGRectMake(20, 30, 80, 50);
-    [backBtn setTitle:@"BACK" forState:UIControlStateNormal];
+    [backBtn setTitle:@"返回" forState:UIControlStateNormal];
     [backBtn setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
     backBtn.titleLabel.font = [UIFont systemFontOfSize:22];
     [backBtn addTarget:self action:@selector(back) forControlEvents:UIControlEventTouchUpInside];
