@@ -12,7 +12,7 @@ typedef void(^wxkBlock)(NSString * valueStr);
 
 @interface ViewController : UIViewController
 
-@property (nonatomic, strong) void(^xkBlock)(NSString * valueStr);
+@property (nonatomic, copy) void(^xkBlock)(NSString * valueStr);
 
 @end
 

@@ -12,8 +12,8 @@ typedef void(^wxkBlock) (NSString * value);
 
 @interface BlockPassByValueVC : UIViewController
 
-@property (nonatomic, strong) void(^passValueBlock)(NSString * valueStr);
+@property (nonatomic, copy) void(^passValueBlock)(NSString * valueStr);
 
-@property (nonatomic, strong) wxkBlock wBlcok;
+@property (nonatomic, copy) wxkBlock wBlcok;
 
 @end
